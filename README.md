@@ -9,13 +9,12 @@
 
 # Facial-Expression-Detection
 
-This is the code for [this video](https://youtu.be/Dqa-3N8VZbw) by Ritesh on YouTube.
 
 Facial Expression or Facial Emotion Detector can be used to know whether a person is sad, happy, angry and so on only through his/her face. This Repository can be used to carry out such a task. It uses your WebCamera and then identifies your expression in Real Time. Yeah, in real-time!
 
 # PLAN
 
-This is a three step process. In the first step, we load the XML file for detecting the presence of faces and then we retrain our network with our image on five different categories. After that, we import the label_image.py program from the [last video]() and set up everything in realtime.
+This is a three step process. In the first step, we load the XML file for detecting the presence of faces and then we retrain our network with our image on five different categories. After that, we import the label_image.py program and set up everything in realtime.
 
 # DEPENDENCIES
 
@@ -46,7 +45,7 @@ This step will consist of several sub steps:
 
 - We need to first create a directory named images. In this directory, create five or six sub directories with names like Happy, Sad, Angry, Calm and Neutral. You can add more than this.
 - Now fill these directories with respective images by downloading them from the Internet. Ex: In "Happy" directory, fill only images of happy faces.
-- Now run the "face-crop.py" program as suggested in the [video](https://youtu.be/Dqa-3N8VZbw)
+- Now run the "face-crop.py" program.
 - Once you have only cleaned images, you are ready to retrain the network. For this purpose, I'm using Mobilenet Model which is quite fast and accurate. To run the training, hit the go to the parent folder and open CMD/Terminal here and hit the following:
 
       python retrain.py --output_graph=retrained_graph.pb --output_labels=retrained_labels.txt --architecture=MobileNet_1.0_224 --image_dir=images
@@ -63,43 +62,4 @@ Now run the "label.py" program by typing the following in CMD/Terminal:
 It'll open a new window of OpenCV and then identifies your Facial Expression.
 We are done now!
 
-## Contributing Guidelines
-Thank you for considering contributing to the "Facial-Expression-Detection" project!
 
-### Code of Conduct
-Before you start contributing, please read and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). We expect all contributors to follow these rules and maintain a respectful and inclusive environment for everyone.
-
-### Getting Started
-
-1.Fork the Repository: To contribute, fork the main repository to your GitHub account.
-
-2.Clone the Repository: Clone your forked repository to your local machine:
-
-```bash
-git clone https://github.com/your-username/Facial-Expression-Detection.git
-```
-3.Set Up Development Environment: Install the necessary dependencies if you haven't already. You can do this by running the following commands:
-```python
-pip install tensorflow
-pip install opencv-python
-```
-4.Create a Branch: Create a new branch for your contribution. Choose a descriptive name for the branch that reflects the nature of your contribution.
-```bash
-git checkout -b feature/your-feature-name
-```
-5.Make Your Changes: Make the necessary changes and additions in your branch.
-
-6.Commit Your Changes: Make clear, concise, and well-documented commit messages. Reference any relevant issues or pull requests in your commits.
-
-```bash
-git commit -m "Add new feature"
-```
-7.Push Your Changes: Push your branch to your GitHub repository:
-
-```bash
-git push origin feature/your-feature-name
-```
-8.Create a Pull Request: Create a pull request from your forked repository to the main repository. 
-
-
-PLEASE DO STAR THIS REPO IF YOU FOUND SOMETHING INTERESTING. <3
