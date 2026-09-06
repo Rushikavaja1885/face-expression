@@ -1,0 +1,41 @@
+.display-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 450px;
+  width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #e2e3e5;
+  margin: auto;
+  box-shadow: 0px 0px 4px 5px rgb(200 202 206);
+}
+
+.text {
+  font-size: 30px;
+}
+
+.media {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.media,
+.canvasStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.webcam {
+  border-radius: 10px;
+}
+
+.canvasStyle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}

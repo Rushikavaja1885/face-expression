@@ -1,0 +1,18 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.loading-container {
+  text-align: center;
+  align-items: center;
+}
+
+.error-text {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}

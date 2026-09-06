@@ -1,0 +1,8 @@
+venv/
+/.idea
+/src/data/data/raf-db-dataset
+.dockerignore
+*.mp4
+*.pyc
+*.onnx
+*.pth
